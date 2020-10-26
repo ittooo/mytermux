@@ -65,7 +65,6 @@ zinit as="completion" for \
     OMZ::plugins/fd/_fd
 
 # ==== 激活功能 ====
-set -o vi
 #自动补全选项
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*' menu select
