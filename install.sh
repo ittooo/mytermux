@@ -3,7 +3,7 @@
 termux-setup-storage
 pkg update
 pkg install vim curl wget git tree neofetch zsh -y
-pkg install nmap fzf openssh proot tracepath httping
+pkg install nmap fzf openssh proot tracepath httping tsu
 
 sed -i '3,$d' $PREFIX/etc/motd
 sed -i '1d' $PREFIX/etc/motd
