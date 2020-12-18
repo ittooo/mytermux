@@ -86,7 +86,4 @@ alias vfzf='vim $(fzf)'
 alias dfzf='cd $(find * -type d | fzf)'
 alias gitfzf='git checkout $(git branch -r | fzf)'
 
-export FZF_DEFAULT_COMMAND='fd --hidden -E ".git" -E "node_modules" . /usr /etc /home'
-export FZF_DEFAULT_OPTS='--height 90% --reverse --preview-window=down --preview \
-"(echo {} | ~/.config/dotfiles/software/fzf/fzf_preview.py) 2> /dev/null | head -300"'
 ### End of Zinit's installer chunk
