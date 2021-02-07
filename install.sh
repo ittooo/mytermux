@@ -10,7 +10,9 @@ sed -i '1d' $PREFIX/etc/motd
 
 git clone https://github.com/ittooo/mytermux "$HOME/mytermux" --depth 1
 
-cp -R "$HOME/mytermux/.termux" "$HOME/.termux"
+rm  "$HOME/.termux/termux.properties"
+mkdir ".termux"
+cp  "$HOME/mytermux/.termux/termux.properties" "$HOME/.termux/termux.properties"
 
 ln -s -T "$HOME/mytermux/zshrc" "$HOME/.zshrc"
 
