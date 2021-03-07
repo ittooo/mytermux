@@ -8,11 +8,7 @@ pkg install fzf openssh proot tracepath nmap dnsutils termux-api tsu
 sed -i '3,$d' $PREFIX/etc/motd
 sed -i '1d' $PREFIX/etc/motd
 
-git clone https://github.com/ittooo/mytermux "$HOME/mytermux" --depth 1
-
-rm  "$HOME/.termux/termux.properties"
-mkdir ".termux"
-cp  "$HOME/mytermux/.termux/termux.properties" "$HOME/.termux/termux.properties"
+git clone https://github.com/ittooo/mytermux "$HOME/.termux" --depth 1
 
 ln -s -T "$HOME/mytermux/zshrc" "$HOME/.zshrc"
 
