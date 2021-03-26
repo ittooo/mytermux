@@ -2,7 +2,7 @@
 
 termux-setup-storage
 pkg update
-pkg install vim curl wget git tree neofetch zsh -y
+pkg install vim curl wget git exa neofetch zsh -y
 pkg install fzf openssh proot tracepath nmap dnsutils termux-api tsu
 
 sed -i '3,$d' $PREFIX/etc/motd
