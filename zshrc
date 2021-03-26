@@ -4,6 +4,7 @@ alias mpvv='you-get -p mpv'
 alias tmux='tmux -u'
 alias c='clear'
 alias ra='ranger'
+alias ls='exa'
 
 # History
 HISTFILE="$HOME/.zsh_history"
