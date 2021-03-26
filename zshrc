@@ -4,7 +4,8 @@ alias mpvv='you-get -p mpv'
 alias tmux='tmux -u'
 alias c='clear'
 alias ra='ranger'
-alias ls='exa'
+alias l='exa'
+alias lgit='lazygit'
 
 # History
 HISTFILE="$HOME/.zsh_history"
