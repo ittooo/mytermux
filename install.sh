@@ -22,7 +22,7 @@ echo "continue or break? put 1 or 2"
 		case $var in
 			"1")
 				mkdir $HOME/.zinit
-				git clone https://github.com/zdharma/zinit.git "$HOME/.zinit/bin" --depth 1
+				git clone https://github.com/zdharma-continuum/zinit.git "$HOME/.zinit/bin" --depth 1
 
 				curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 				https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
