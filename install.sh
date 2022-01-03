@@ -21,13 +21,15 @@ echo "continue or break? put 1 or 2"
 		read var
 		case $var in
 			"1")
-				mkdir $HOME/.zinit
-				git clone https://github.com/zdharma-continuum/zinit.git "$HOME/.zinit/bin" --depth 1
+				ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+    			mkdir -p "$(dirname $ZINIT_HOME)"
+    			git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 
 				curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 				https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 				chsh -s zsh
+				zinit self-update
 				continue
 				;;
 			"2")

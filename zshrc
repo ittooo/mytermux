@@ -17,7 +17,8 @@ setopt hist_ignore_space      # 在命令前添加空格，不将此命令添加
 setopt extended_history       # record timestamp of command in HISTFILE
 setopt hist_verify            # show command with history expansion to user before running it
 
-source "$HOME/.zinit/bin/zinit.zsh"
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+source "${ZINIT_HOME}/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 # ==== 加载功能 ====
