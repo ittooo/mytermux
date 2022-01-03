@@ -63,8 +63,8 @@ zinit ice curl for \
     OMZ::plugins/z
 
 zinit as="completion" for \
-    OMZ::plugins/cargo/_cargo \
-    OMZ::plugins/rust/_rust \
+    OMZ::plugins/adb/_adb \
+    OMZ::plugins/rust/_rustc \
     OMZ::plugins/fd/_fd
 
 # ==== 激活功能 ====
