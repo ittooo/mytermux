@@ -2,12 +2,11 @@
 termux install
 安装包下载
 https://f-droid.org/packages/com.termux
-替换源
-https://mirrors.tuna.tsinghua.edu.cn/help/termux/
 
-sh -c "$(curl -fsSL https://github.com/ittooo/mytermux/raw/master/install.sh)"
+termux-change-repo使用此命令替换镜像源
+pkg  install root-repo unstable-repo game-repo science-repo
 
-vim pulginstall
+sh -c "$(curl -fsSL https://gitee.com/ittooo/mytermux/raw/master/install.sh)"
 
 修改问候语
 vim $PREFIX/etc/motd
