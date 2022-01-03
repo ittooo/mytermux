@@ -28,7 +28,7 @@ zinit ice pick"async.zsh" src"pure.zsh"
 zinit light ittooo/pure-ys
 # ==== 加载 GitHub 插件 ====
 zinit light-mode lucid wait for \
-    zdharma/fast-syntax-highlighting \
+    zdharma-continuum/fast-syntax-highlighting \
     arialdomartini/oh-my-git
 
 zinit light-mode lucid wait for \
