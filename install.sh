@@ -6,6 +6,7 @@ pkg install vim curl wget git exa neofetch zsh -y
 pkg install fzf openssh proot tracepath nmap dnsutils termux-api tsu hping3 termux-tools
 
 echo "echo 'Welcome Termux!'" > $PREFIX/etc/motd.sh
+echo "echo 'Welcome Termux!'" > $PREFIX/etc/motd
 
 git clone https://gitee.com/ittooo/mytermux "$HOME/mytermux" --depth 1
 
